@@ -1,11 +1,54 @@
-  <DOCTYPE!>
-  <head>
-    <title>AquaSite</title>
-    <link rel="stylesheet" href="index.css">
-  </head>
-  <body>
-    <div class="nav-container">
-      <img src="Images/AquaIcon.svg" alt="icon">
-    </div>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AquaOS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <img src="Images/AquaIcon.svg" alt="AquaOS Icon" class="logo">
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#downloads">Downloads</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+    </nav>
+  </header>
 
+  <!-- Home Section -->
+  <section id="home">
+    <div class="welcome">
+      <div class="image-placeholder">
+        <!-- Add the AquaOS Welcome image here -->
+        <p>Welcome to AquaOS</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Downloads Section -->
+  <section id="downloads">
+    <h2>Downloads</h2>
+    <div class="device-grid">
+      <div class="device-card">
+        <h3>Device Name</h3>
+        <button>Download</button>
+      </div>
+      <!-- Add more device cards if needed -->
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About AquaOS</h2>
+    <p>
+      AquaOS is designed to bring a smooth and modern interface to devices.
+      This is a placeholder for information about the operating system.
+    </p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
