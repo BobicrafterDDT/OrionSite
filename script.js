@@ -1,2 +1,13 @@
-// This script is for future use
-// For now, the smooth scrolling ability is handled via the CSS 'scroll-behavior' property.
+document.querySelectorAll('nav a').forEach(link => {
+    link.addEventListener('click', function (e) {
+      e.preventDefault();
+      const targetID = this.getAttribute('href').substring(1);
+      const targetSection = document.getElementById(targetID);
+  
+      window.scrollTo({
+        top: targetSection.offsetTop - 70, // Adjust for fixed navbar
+        behavior: 'smooth',
+      });
+    });
+  });
+  2

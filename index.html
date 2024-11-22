@@ -7,42 +7,48 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="nav-container">
-    <img src="Images/AquaIcon.svg" alt="AquaOS Icon" class="logo">
-    <a href="#home">Home</a>
-    <a href="#downloads">Downloads</a>
-    <a href="#about">About</a>
-  </div>
-
-  <!-- Home Section -->
-  <section id="home">
-    <div class="welcome">
-      <div class="image-placeholder">
-        <!-- Add the AquaOS Welcome image here -->
-        <p>Welcome to AquaOS</p>
+  <!-- Navigation Bar -->
+  <nav>
+    <div class="nav-container">
+      <div class="logo">
+        <img src="Images/AquaIcon.svg" alt="AquaOS Logo">
       </div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#downloads">Downloads</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
     </div>
+  </nav>
+
+  <!-- Sections -->
+  <section id="home">
+    <h1>Welcome to AquaOS</h1>
   </section>
 
-  <!-- Downloads Section -->
   <section id="downloads">
     <h2>Downloads</h2>
-    <div class="device-grid">
-      <div class="device-card">
-        <h3>Device Name</h3>
-        <button>Download</button>
+    <div class="phone-grid">
+      <!-- Phone 1 -->
+      <div class="phone-card">
+        <img src="Images/samsung_s10e.jpg" alt="Samsung Galaxy S10e">
+        <p>Samsung Galaxy S10e</p>
+        <a href="AquaOS.zip" class="download-button">Download</a>
       </div>
-      <!-- Add more device cards if needed -->
+  
+      <!-- Phone 2 -->
+      <div class="phone-card">
+        <img src="Images/google_pixel5.jpg" alt="Google Pixel 5">
+        <p>Google Pixel 5</p>
+        <a href="AquaOS.zip" class="download-button">Download</a>
+      </div>
+      <!-- Add more phones if needed -->
     </div>
-  </section>
+  </section>  
 
-  <!-- About Section -->
   <section id="about">
-    <h2>About AquaOS</h2>
-    <p>
-      AquaOS is designed to bring a smooth and modern interface to devices.
-      This is a placeholder for information about the operating system.
-    </p>
+    <h2>About Us</h2>
+    <p>Learn more about AquaOS and its features.</p>
   </section>
 
   <script src="script.js"></script>
