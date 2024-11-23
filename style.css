@@ -108,11 +108,10 @@ section {
   width: auto;   /* Ensures the image takes full width of its container */
   height: auto;  /* Keeps the aspect ratio intact */
   max-width: 100%;  /* Ensures image doesn't overflow its container */
-  transition: transform 0.15s ease-out;
 }
 
 .home-image-container img:hover {
-  animation-name: ImageScale;
+  animation: ImageScale 1s ease-out;
 }
 
 /* Phone Grid */
@@ -205,9 +204,9 @@ section {
 
 @keyframes ImageScale {
   0% {
-        transform: scale(1.0);
+        transform: scale(1);
   }
   100% {
-      transform: scale(2);
+      transform: scale(1.10);
   }
 }
