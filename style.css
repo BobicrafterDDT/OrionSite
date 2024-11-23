@@ -108,12 +108,11 @@ section {
   width: auto;   /* Ensures the image takes full width of its container */
   height: auto;  /* Keeps the aspect ratio intact */
   max-width: 100%;  /* Ensures image doesn't overflow its container */
-  animation: ImageScale 0.5s ease-out forwards;
+  transition: transform 0.15s ease-out;
 }
 
 .home-image-container img:hover {
-  animation: ImageScale 0.5s;
-  animation-timing-function: ease-out forwards;
+  transform: scale(1.15); /* Slight zoom effect on hover */
 }
 
 /* Phone Grid */
@@ -201,14 +200,5 @@ section {
 
   section {
     padding: 120px 40px; 
-  }
-}
-
-@keyframes ImageScale {
-  0% {
-        transform: scale(1);
-  }
-  100% {
-      transform: scale(1.10);
   }
 }
