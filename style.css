@@ -112,7 +112,7 @@ section {
 }
 
 .home-image-container img:hover {
-  transform: scale(1.15); /* Slight zoom effect on hover */
+  animation-name: ImageScale;
 }
 
 /* Phone Grid */
@@ -200,5 +200,14 @@ section {
 
   section {
     padding: 120px 40px; 
+  }
+}
+
+@keyframes ImageScale {
+  0% {
+        transform: scale(1.0);
+  }
+  100% {
+      transform: scale(1.10);
   }
 }
