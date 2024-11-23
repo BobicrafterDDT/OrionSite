@@ -111,7 +111,8 @@ section {
 }
 
 .home-image-container img:hover {
-  animation: ImageScale 1s ease-out;
+  animation: ImageScale 1s;
+  animation-timing-function: ease-out;
 }
 
 /* Phone Grid */
